@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+</head>
+<body>
+    <canvas id="myCanvas" style="border: 2px solid rgb(0, 55, 255); height: 800px; width:800px;"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var c = canvas.getContext("2d");
+        
+        c.moveTo(0, 60);
+        c.lineTo(100, 100);
+        c.strokeStyle = "black"; // Set stroke color
+        c.stroke();
+        
+        c.beginPath();
+        c.arc(95, 50, 40, 0, 2 * Math.PI);
+        c.stroke();
+        
+        c.font = "10px Arial";
+        c.strokeText("web technology", 100, 100);
+        
+        c.font = "20px Arial";
+        c.fillText("welcome to lab", 140, 120);
+    </script>
+</body>
+</html>

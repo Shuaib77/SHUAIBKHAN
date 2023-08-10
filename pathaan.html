@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PATHAAN MOVIE REVIEW</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+    }
+    header {
+      background-color:skyblue;
+      color: #ffffff;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+    }
+    main {
+      text-align: left; 
+      padding: 20px;
+    }
+    .center-image {
+      margin: 50px auto; 
+      display: block; 
+    }
+    .movie-review {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PATHAAN MOVIE REVIEW</h1>
+  </header>
+  <img src="pathaan.jpg" alt="Your Image" class="center-image">
+  <main>
+    <h3>Movie Information</h3>
+    <p>
+      <strong>Title:</strong> Pathaan<br>
+      <strong>Release Date:</strong> 25 January 2023<br>
+      <strong>Director:</strong> Siddharth Anand<br>
+      <strong>Genre:</strong> Action, Thriller<br>
+      <strong>Rating:</strong> 4.5/5
+    </p>
+    <h2>Trailer</h2>
+    <h2>Synopsis</h2>
+    <p>
+        A Pakistani general hires a private terror outfit to conduct attacks in India while Pathaan, an Indian secret agent, is on a mission to form a special unit.
+    </p>
+  </main>
+  <main>
+    <h2>User Reviews</h2>
+    <div class="movie-review">
+      <h3>User1</h3>
+      <p>Pathaan is an excellent action-packed movie. The performances were top-notch, and the storyline kept me hooked throughout.</p>
+      <p>Rating: 5/5</p>
+    </div>
+
+    <div class="movie-review">
+      <h3>User2</h3>
+      <p>I really enjoyed watching Pathaan. Shahrukh Khan's performance was outstanding, and the action sequences were impressive.</p>
+      <p>Rating: 4/5</p>
+    </div>
+    <h2>Leave a Review</h2>
+    <form>
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="username" required><br>
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Very Good</option>
+        <option value="3">3 - Good</option>
+        <option value="2">2 - Fair</option>
+        <option value="1">1 - Poor</option>
+      </select><br>
+      <label for="review">Your Review:</label><br>
+      <textarea id="review" name="review" rows="4" cols="50" required></textarea><br>
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+</body>
+</html>
+

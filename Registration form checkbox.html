@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Course Registration</title>
+    <style>
+        /* CSS styles for the form */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            cursor: pointer;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Center align the heading and form */
+        h1, form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- The online course registration form starts here -->
+    <h1>Online Course Registration</h1>
+    <form>
+        <!-- Checkbox for agreeing to terms and conditions -->
+        <label for="termsCheckbox">
+            <input type="checkbox" id="termsCheckbox" required>
+            I agree to the terms and conditions
+        </label>
+        
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <!-- Phone Number input -->
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

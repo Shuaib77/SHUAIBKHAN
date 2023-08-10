@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5px;
+        }
+        h1 {
+            color:white;
+            text-align: center;background-color: blue;padding: 30px;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-item {
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .image-item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="tajmahal.jpg" alt="Image 1" style="width: 500px; height: 500px;>
+        </div>
+        <div class="image-item">
+            <img src="charminar.jpg" alt="Image 2" style="width: 500px; height: 500px;">
+        </div>
+        <div class="image-item">
+            <img src="redfort.jpg" alt="Image 3" style="width: 400px; height: 250px;">
+        </div>
+        <div class="image-item">
+            <img src="falaknuma.jpg" alt="Image 5">
+        </div>
+    </div>
+</body>
+</html>
